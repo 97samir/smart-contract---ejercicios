@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.20+commit.a1b79de6"
+		"version": "0.8.30+commit.73712a01"
 	},
 	"language": "Solidity",
 	"output": {
@@ -594,24 +594,6 @@
 				"isApprovedForAll(address,address)": {
 					"details": "See {IERC721-isApprovedForAll}."
 				},
-				"isCertificateValid(uint256)": {
-					"params": {
-						"tokenId": "Identificador del certificado NFT."
-					},
-					"returns": {
-						"_0": "true si el certificado no ha sido revocado."
-					}
-				},
-				"issueCertificate(address,string,string,string,string)": {
-					"details": "Solo la institución (owner del contrato) puede emitir certificados.",
-					"params": {
-						"courseName": "Nombre del curso o programa académico.",
-						"institutionName": "Nombre de la institución educativa.",
-						"studentName": "Nombre del estudiante (solo en pruebas).",
-						"to": "Dirección del destinatario (cuenta del estudiante en MetaMask).",
-						"tokenURI": "Enlace IPFS del metadato JSON (con hash único del certificado)."
-					}
-				},
 				"name()": {
 					"details": "See {IERC721Metadata-name}."
 				},
@@ -623,9 +605,6 @@
 				},
 				"renounceOwnership()": {
 					"details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
-				},
-				"revokeCertificate(uint256)": {
-					"details": "Solo el propietario del contrato (la institución) puede realizar esta acción."
 				},
 				"safeTransferFrom(address,address,uint256)": {
 					"details": "See {IERC721-safeTransferFrom}."
@@ -658,13 +637,7 @@
 			"kind": "user",
 			"methods": {
 				"isCertificateValid(uint256)": {
-					"notice": "Verifica si un certificado sigue siendo válido."
-				},
-				"issueCertificate(address,string,string,string,string)": {
-					"notice": "Emite un nuevo certificado académico como NFT."
-				},
-				"revokeCertificate(uint256)": {
-					"notice": "Revoca un certificado emitido previamente."
+					"notice": "Verifica si un certificado sigue siendo válido. Retorna true si el certificado no ha sido revocado."
 				}
 			},
 			"version": 1
@@ -674,7 +647,7 @@
 		"compilationTarget": {
 			"contracts/AcademicCertificate.sol": "AcademicCertificate"
 		},
-		"evmVersion": "shanghai",
+		"evmVersion": "prague",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -815,11 +788,11 @@
 			]
 		},
 		"contracts/AcademicCertificate.sol": {
-			"keccak256": "0xf4ada6771faf40b966e9711a32f4c1610193e54aa2567550dce044af47e19bf3",
+			"keccak256": "0x72b0fa2f8251141bb3444ee81467a34953100e90a735a5a57aa960daf54360ed",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bfc1c171ef4edf2665ff3e1952d7f08ab113b38eebb2bb73918d17f35fdb1c81",
-				"dweb:/ipfs/QmNRjC48iaUevfeSf5p9hz8HzmjfH4AQGmJk3odHnA14ob"
+				"bzz-raw://33014284a84a68bbcc463bf5b3fecc9deee5139cd4f4400a70cb6fc3f2891f9d",
+				"dweb:/ipfs/QmVTmmiytbSd5wEbvQFHnfbXFf9Umeu3Er4fkT5auJQP7a"
 			]
 		}
 	},
