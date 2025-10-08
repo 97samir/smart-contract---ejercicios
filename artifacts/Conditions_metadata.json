@@ -57,7 +57,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Conditions.sol": "Conditions"
+			"contracts/Variables.sol": "Conditions"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -71,11 +71,11 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Conditions.sol": {
-			"keccak256": "0x83e874b43817b943c9d4c02163ed0d12c6c879f69d2d6419d188ab3133217589",
+		"contracts/Variables.sol": {
+			"keccak256": "0x759c6a6d1b22990357359bcb63820d36291a248e05425fa65f5c5fc5fb34bf99",
 			"urls": [
-				"bzz-raw://093ab897f6359fa1f285e9c1e6d8556f6d0b28a4015aeebcd6ca88a2425a494e",
-				"dweb:/ipfs/QmZ33K4NhpettoSyUccuN6AGyy9kMeWXyTLDqxgYHoAUXp"
+				"bzz-raw://a192a4efde3078681707afb2d9ff462ee6fcac0d35074ed68a449551ecde1afa",
+				"dweb:/ipfs/QmYfiDN9n6i9ET251meLoqc1p8waiHuKUfgLwAHsF29u5w"
 			]
 		}
 	},
